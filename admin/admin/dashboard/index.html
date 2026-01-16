@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom Dashboard CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Netlify Identity -->
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-dark text-white" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase border-bottom">
+                <i class="fas fa-user-secret me-2"></i>Admin
+            </div>
+            <div class="list-group list-group-flush my-3">
+                <a href="#hero" class="list-group-item list-group-item-action bg-transparent text-light active"><i
+                        class="fas fa-home me-2"></i>Hero</a>
+                <a href="#about" class="list-group-item list-group-item-action bg-transparent text-light"><i
+                        class="fas fa-user me-2"></i>About me</a>
+                <a href="#skills" class="list-group-item list-group-item-action bg-transparent text-light"><i
+                        class="fas fa-code me-2"></i>Skills & Tools</a>
+                <a href="#projects" class="list-group-item list-group-item-action bg-transparent text-light"><i
+                        class="fas fa-project-diagram me-2"></i>Projects</a>
+                <a href="#experience" class="list-group-item list-group-item-action bg-transparent text-light"><i
+                        class="fas fa-briefcase me-2"></i>Experience</a>
+                <a href="#education" class="list-group-item list-group-item-action bg-transparent text-light"><i
+                        class="fas fa-graduation-cap me-2"></i>Education</a>
+                <a href="#resume" class="list-group-item list-group-item-action bg-transparent text-light"><i
+                        class="fas fa-file-alt me-2"></i>Resume / CV</a>
+                <a href="#contact" class="list-group-item list-group-item-action bg-transparent text-light"><i
+                        class="fas fa-envelope me-2"></i>Contact</a>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4 border-bottom">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0 text-white">Dashboard</h2>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <div data-netlify-identity-menu></div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid px-4 py-4 content-section" id="section-hero">
+                <h3 class="text-white mb-4">Hero Section</h3>
+                <form id="form-hero">
+                    <div class="mb-3">
+                        <label class="form-label text-light">Subtitle</label>
+                        <input type="text" class="form-control bg-dark text-white border-secondary" name="subtitle">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Title (Name)</label>
+                        <input type="text" class="form-control bg-dark text-white border-secondary" name="title">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Roles (Comma separated)</label>
+                        <input type="text" class="form-control bg-dark text-white border-secondary" name="roles">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Tagline</label>
+                        <input type="text" class="form-control bg-dark text-white border-secondary" name="tagline">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <div class="status-msg mt-2"></div>
+                </form>
+            </div>
+
+            <div class="container-fluid px-4 py-4 content-section d-none" id="section-about">
+                <h3 class="text-white mb-4">About Section</h3>
+                <form id="form-about">
+                    <div class="mb-3">
+                        <label class="form-label text-light">Title</label>
+                        <input type="text" class="form-control bg-dark text-white border-secondary" name="title">
+                        <div class="form-text text-muted">HTML Allowed (e.g. &lt;span&gt;)</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Description (Main)</label>
+                        <textarea class="form-control bg-dark text-white border-secondary" rows="4"
+                            name="description"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Sub Description</label>
+                        <textarea class="form-control bg-dark text-white border-secondary" rows="3"
+                            name="subDescription"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Highlights (Comma separated)</label>
+                        <input type="text" class="form-control bg-dark text-white border-secondary" name="highlights">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <div class="status-msg mt-2"></div>
+                </form>
+            </div>
+
+            <!-- Skills, Tools, Projects etc. placeholders - simpler implementation for now due to length -->
+            <!-- I will implement one generic editor for the complex JSON arrays or text areas for JSON blob editing for complex parts if needed, 
+                 but for this prompt I should try to make it user friendly. 
+                 A simple approach for arrays is textareas with JSON content or just 'Coming Soon' for complex nested arrays if not critical. 
+                 But the user said "Match the content structure". 
+                 I'll add textareas for the array sections for raw JSON editing for now, as building dynamic form repeaters in vanilla JS is huge. 
+                 Or I can use a simple JSON editor approach.
+                 Let's stick to Textareas for complex arrays (Skills, Projects) effectively "Raw Edit" for reliability.
+            -->
+
+            <div class="container-fluid px-4 py-4 content-section d-none" id="section-skills">
+                <h3 class="text-white mb-4">Skills & Tools (JSON Mode)</h3>
+                <div class="alert alert-info">Edit the JSON object arrays directly. Valid JSON required.</div>
+                <form id="form-skills">
+                    <div class="mb-3">
+                        <label class="form-label text-light">Offensive Skills (JSON)</label>
+                        <textarea class="form-control bg-dark text-white border-secondary font-monospace" rows="6"
+                            name="skills_offensive"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Defensive Skills (JSON)</label>
+                        <textarea class="form-control bg-dark text-white border-secondary font-monospace" rows="6"
+                            name="skills_defensive"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Tools List (JSON)</label>
+                        <textarea class="form-control bg-dark text-white border-secondary font-monospace" rows="6"
+                            name="tools"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <div class="status-msg mt-2"></div>
+                </form>
+            </div>
+
+            <div class="container-fluid px-4 py-4 content-section d-none" id="section-projects">
+                <h3 class="text-white mb-4">Projects (JSON Mode)</h3>
+                <form id="form-projects">
+                    <div class="mb-3">
+                        <label class="form-label text-light">Projects Array (JSON)</label>
+                        <textarea class="form-control bg-dark text-white border-secondary font-monospace" rows="15"
+                            name="projects"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <div class="status-msg mt-2"></div>
+                </form>
+            </div>
+
+            <div class="container-fluid px-4 py-4 content-section d-none" id="section-experience">
+                <h3 class="text-white mb-4">Experience (JSON Mode)</h3>
+                <form id="form-experience">
+                    <div class="mb-3">
+                        <label class="form-label text-light">Experience Array (JSON)</label>
+                        <textarea class="form-control bg-dark text-white border-secondary font-monospace" rows="10"
+                            name="experience"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <div class="status-msg mt-2"></div>
+                </form>
+            </div>
+
+            <div class="container-fluid px-4 py-4 content-section d-none" id="section-education">
+                <h3 class="text-white mb-4">Education (JSON Mode)</h3>
+                <form id="form-education">
+                    <div class="mb-3">
+                        <label class="form-label text-light">Education Array (JSON)</label>
+                        <textarea class="form-control bg-dark text-white border-secondary font-monospace" rows="10"
+                            name="education"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <div class="status-msg mt-2"></div>
+                </form>
+            </div>
+
+            <div class="container-fluid px-4 py-4 content-section d-none" id="section-resume">
+                <h3 class="text-white mb-4">Resume / CV Data</h3>
+                <form id="form-resume">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label text-light">Full Name</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" name="name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label text-light">Role Line</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary" name="role">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Professional Summary</label>
+                        <textarea class="form-control bg-dark text-white border-secondary" rows="3"
+                            name="summary"></textarea>
+                    </div>
+                    <!-- Detailed Resume sections can be JSON for now to save space -->
+                    <div class="mb-3">
+                        <label class="form-label text-light">Experience List (JSON)</label>
+                        <textarea class="form-control bg-dark text-white border-secondary font-monospace" rows="5"
+                            name="expList"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Education List (JSON)</label>
+                        <textarea class="form-control bg-dark text-white border-secondary font-monospace" rows="5"
+                            name="eduList"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Resume Skills List (JSON Array)</label>
+                        <textarea class="form-control bg-dark text-white border-secondary font-monospace" rows="3"
+                            name="skillsList"></textarea>
+                    </div>
+
+                    <hr class="border-secondary my-4">
+                    <h5 class="text-white mb-3">CV Upload</h5>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Upload New PDF</label>
+                        <input class="form-control bg-dark text-white border-secondary" type="file" id="cvFile"
+                            accept=".pdf">
+                        <div class="form-text text-muted">This will replace the existing CV file.</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <div class="status-msg mt-2"></div>
+                </form>
+            </div>
+
+            <div class="container-fluid px-4 py-4 content-section d-none" id="section-contact">
+                <h3 class="text-white mb-4">Contact Info</h3>
+                <form id="form-contact">
+                    <div class="mb-3">
+                        <label class="form-label text-light">Email</label>
+                        <input type="email" class="form-control bg-dark text-white border-secondary" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Location</label>
+                        <input type="text" class="form-control bg-dark text-white border-secondary" name="location">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">LinkedIn URL</label>
+                        <input type="url" class="form-control bg-dark text-white border-secondary" name="linkedin">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">GitHub URL</label>
+                        <input type="url" class="form-control bg-dark text-white border-secondary" name="github">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label text-light">Twitter/X URL</label>
+                        <input type="url" class="form-control bg-dark text-white border-secondary" name="twitter">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <div class="status-msg mt-2"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

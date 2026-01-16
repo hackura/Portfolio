@@ -1,0 +1,10 @@
+# Local Environment Variables
+.env
+.netlify/
+
+# Dependencies
+node_modules/
+
+# OS misc
+.DS_Store
+Thumbs.db
