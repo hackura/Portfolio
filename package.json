@@ -1,0 +1,11 @@
+{
+    "name": "portfolio-admin",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "netlify dev"
+    },
+    "devDependencies": {
+        "netlify-cli": "^17.0.0"
+    }
+}
