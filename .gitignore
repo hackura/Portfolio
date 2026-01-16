@@ -1,7 +1,7 @@
 # Local Environment Variables
 .env
 .netlify/
-.enc.example
+.env.example
 # Dependencies
 node_modules/
 
