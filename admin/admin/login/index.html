@@ -72,15 +72,33 @@
     </div>
 
     <script>
-        // Redirect if already logged in
-        if (netlifyIdentity.currentUser()) {
-            window.location.href = "../dashboard/";
+        // Redirect logic with Role Check
+        function handleLogin(user) {
+            if (!user) return;
+
+            // Check for admin role
+            const roles = (user.app_metadata && user.app_metadata.roles) || [];
+            if (roles.includes('admin')) {
+                window.location.href = "../dashboard/";
+            } else {
+                const alertBox = document.createElement('div');
+                alertBox.className = 'alert alert-danger mt-3';
+                alertBox.innerHTML = '<strong>Access Denied:</strong> User does not have "admin" role.<br><small>Please assign the "admin" role in your Netlify Identity dashboard, then logout and login again.</small>';
+
+                // Ensure only one alert exists
+                const existing = document.querySelector('.alert');
+                if (existing) existing.remove();
+
+                document.querySelector('.login-card').appendChild(alertBox);
+            }
         }
 
-        // Redirect on login
+        // Check on load
+        handleLogin(netlifyIdentity.currentUser());
+
+        // Check on login event
         netlifyIdentity.on('login', user => {
-            console.log('Logged in', user);
-            window.location.href = "../dashboard/";
+            handleLogin(user);
         });
 
         // Init
