@@ -78,7 +78,7 @@ exports.handler = async (event, context) => {
             const putBody = {
                 message: message,
                 content: contentBase64,
-                branch: 'main'  // Ensure this matches your repo's default branch (main or master)
+                branch: 'master'  // Changed from main to master based on error
             };
             if (sha) putBody.sha = sha;
 
