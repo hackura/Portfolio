@@ -1,166 +1,238 @@
 {
-    "hero": {
-        "subtitle": "HELLO, I AM",
-        "title": "KARL SEYRAM",
-        "roles": [
-            "Student",
-            "Cybersecurity Specialist",
-            "Penetration Tester",
-            "Red Team Operator",
-            "Ethical Hacker"
-        ],
-        "tagline": "\"Securing systems by thinking like an attacker.\"",
-        "cvLink": "assets/cv/Karl_Seyram_CV.pdf"
-    },
-    "about": {
-        "title": "Ethical Hacker & <span class=\"text-primary\">Red Teamer</span>",
-        "description": "I am a cybersecurity professional dedicated to securing digital infrastructures by exposing vulnerabilities before malicious actors can exploit them. With a strong foundation in <span class=\"text-white\">Ethical Hacking</span> and <span class=\"text-white\">Red Team Operations</span>, I leverage an offensive mindset to build robust defensive strategies.",
-        "subDescription": "My expertise spans across web application security, network testing, and specialized tool development using Python and Bash. Founder of <strong class=\"text-primary\">Hackura Security</strong>, I am committed to continuous learning, playing CTFs, and contributing to the open-source security community.",
-        "highlights": [
-            "Kali Linux Expert",
-            "Red & Blue Team Ops",
-            "Authorized Testing",
-            "Continuous Learner"
-        ]
-    },
-    "skills": {
-        "offensive": [
-            { "name": "Web Application Pentesting", "percent": 90 },
-            { "name": "Network Pentesting", "percent": 85 },
-            { "name": "Privilege Escalation", "percent": 80 },
-            { "name": "Reconnaissance & Enumeration", "percent": 95 }
-        ],
-        "defensive": [
-            { "name": "Incident Response", "percent": 75 },
-            { "name": "Log Analysis", "percent": 80 },
-            { "name": "Threat Detection", "percent": 70 },
-            { "name": "System Hardening", "percent": 85 }
-        ]
-    },
-    "tools": [
-        { "name": "Kali Linux", "icon": "fab fa-linux" },
-        { "name": "Nmap", "icon": "fas fa-network-wired" },
-        { "name": "Metasploit", "icon": "fas fa-bug" },
-        { "name": "Burp Suite", "icon": "fas fa-cookie-bite" },
-        { "name": "Wireshark", "icon": "fas fa-wave-square" },
-        { "name": "Hydra", "icon": "fas fa-lock-open" },
-        { "name": "SQLmap", "icon": "fas fa-database" },
-        { "name": "Nikto", "icon": "fas fa-search" },
-        { "name": "Gobuster", "icon": "fas fa-folder-open" },
-        { "name": "Bash", "icon": "fas fa-terminal" },
-        { "name": "Python", "icon": "fab fa-python" }
+  "hero": {
+    "subtitle": "HELLO, I AM",
+    "title": "KARL SEYRAM Dorpe",
+    "roles": [
+      "Student",
+      "Cybersecurity Specialist",
+      "Penetration Tester",
+      "Red Team Operator",
+      "Ethical Hacker"
     ],
-    "projects": [
-        {
-            "id": "p1",
-            "title": "SentinelX CLI",
-            "category": "Red Team Tooling",
-            "badgeClass": "bg-danger",
-            "description": "A command-line interface tool for automated network reconnaissance and vulnerability scanning.",
-            "tags": ["#Python", "#Bash"],
-            "link": "https://github.com/hackura/SentinelX",
-            "linkText": "Source Code",
-            "icon": "fab fa-github"
-        },
-        {
-            "id": "p2",
-            "title": "RedSentinel",
-            "category": "Reconnaissance",
-            "badgeClass": "bg-primary",
-            "description": "Advanced reconnaissance and threat intelligence gathering tool for red team operations.",
-            "tags": ["#Rust", "#Automation"],
-            "link": "https://github.com/hackura/RedSentinel",
-            "linkText": "Source Code",
-            "icon": "fab fa-github"
-        },
-        {
-            "id": "p3",
-            "title": "Hackura Store",
-            "category": "Ecommerce",
-            "badgeClass": "bg-success",
-            "description": "A secure ecommerce platform for cybersecurity gear and merchandise.",
-            "tags": ["#WebDev", "#SecureCoding"],
-            "link": "https://hackura.store",
-            "linkText": "View Store",
-            "icon": "fas fa-shopping-cart"
-        }
+    "tagline": "\"Securing systems by thinking like an attacker.\"",
+    "cvLink": "assets/cv/Karl_Seyram_CV.pdf"
+  },
+  "about": {
+    "title": "Ethical Hacker & <span class=\"text-primary\">Red Teamer</span>",
+    "description": "I am a cybersecurity professional dedicated to securing digital infrastructures by exposing vulnerabilities before malicious actors can exploit them. With a strong foundation in <span class=\"text-white\">Ethical Hacking</span> and <span class=\"text-white\">Red Team Operations</span>, I leverage an offensive mindset to build robust defensive strategies.",
+    "subDescription": "My expertise spans across web application security, network testing, and specialized tool development using Python and Bash. Founder of <strong class=\"text-primary\">Hackura Security</strong>, I am committed to continuous learning, playing CTFs, and contributing to the open-source security community.",
+    "highlights": [
+      "Kali Linux Expert",
+      "Red & Blue Team Ops",
+      "Authorized Testing",
+      "Continuous Learner"
+    ]
+  },
+  "skills": {
+    "offensive": [
+      {
+        "name": "Web Application Pentesting",
+        "percent": 90
+      },
+      {
+        "name": "Network Pentesting",
+        "percent": 85
+      },
+      {
+        "name": "Privilege Escalation",
+        "percent": 80
+      },
+      {
+        "name": "Reconnaissance & Enumeration",
+        "percent": 95
+      }
     ],
-    "experience": [
-        {
-            "role": "Founder & Lead",
-            "company": "Hackura Security",
-            "date": "2026 - Present",
-            "description": "Founded a student-led security initiative focusing on ethical hacking workshops, and security awareness."
-        },
-        {
-            "role": "Security Researcher & Student",
-            "company": "Independent Labs",
-            "date": "2025 - Present",
-            "description": "Building custom tools, participating in bug bounties, and maintaining active practice on Hack The Box and TryHackMe."
-        },
-        {
-            "role": "Tool Developer",
-            "company": "Open Source",
-            "date": "2026",
-            "description": "Developed 'SentinelX', a Python-based CLI tool for automated information gathering and basic vulnerability assessment."
-        }
-    ],
-    "education": [
-        {
-            "title": "Trust and Google Cloud Security",
-            "subtitle": "Online Training Platform",
-            "status": "Completed",
-            "statusClass": "bg-success"
-        },
-        {
-            "title": "Network Security & Forensics",
-            "subtitle": "Self-Paced Labs & Research",
-            "status": "Ongoing",
-            "statusClass": "bg-primary"
-        },
-        {
-            "title": "Python for Cybersecurity",
-            "subtitle": "Specialized Course",
-            "status": "Ongoing",
-            "statusClass": "bg-success"
-        }
-    ],
-    "resume": {
-        "name": "Karl Seyram Dorpe",
-        "role": "Cybersecurity | Pentester | Red Team",
-        "location": "Ghana",
-        "email": "karlseyram18@gmail.com",
-        "github": "https://github.com/hackura",
-        "linkedin": "https://linkedin.com/in/karlseyramdorpe",
-        "summary": "Cybersecurity enthusiast and ethical hacker focused on authorized penetration testing, red team operations, and defensive security. Passionate about securing systems by thinking like an attacker. adept at identifying vulnerabilities and implementing robust security measures.",
-        "skillsList": [
-            "Web & Network Pentesting",
-            "Vulnerability Assessment",
-            "Kali Linux & Security Tooling",
-            "Red & Blue Team Operations"
-        ],
-        "eduList": [
-            { "name": "BSc. Cybersecurity", "subtitle": "Ghana Communication Technology University" },
-            { "name": "Advanced Penetration Testing", "subtitle": "Online Training" }
-        ],
-        "expList": [
-            {
-                "role": "Founder & Lead | Hackura Security",
-                "date": "2026 - Present",
-                "desc": "Leading student security initiatives, conducting workshops, and organizing CTF competitions."
-            },
-            {
-                "role": "Security Researcher | Independent",
-                "date": "2025 - Present",
-                "desc": "Developing custom reconnaissance tools and participating in bug bounties, and maintaining active practice on my personal home lab."
-            }
-        ]
+    "defensive": [
+      {
+        "name": "Incident Response",
+        "percent": 75
+      },
+      {
+        "name": "Log Analysis",
+        "percent": 80
+      },
+      {
+        "name": "Threat Detection",
+        "percent": 70
+      },
+      {
+        "name": "System Hardening",
+        "percent": 85
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Kali Linux",
+      "icon": "fab fa-linux"
     },
-    "contact": {
-        "email": "karlseyram18@gmail.com",
-        "location": "Ghana",
-        "linkedin": "https://linkedin.com/in/karlseyramdorpe",
-        "github": "https://github.com/hackura",
-        "twitter": "https://x.com/dorpe_karl"
+    {
+      "name": "Nmap",
+      "icon": "fas fa-network-wired"
+    },
+    {
+      "name": "Metasploit",
+      "icon": "fas fa-bug"
+    },
+    {
+      "name": "Burp Suite",
+      "icon": "fas fa-cookie-bite"
+    },
+    {
+      "name": "Wireshark",
+      "icon": "fas fa-wave-square"
+    },
+    {
+      "name": "Hydra",
+      "icon": "fas fa-lock-open"
+    },
+    {
+      "name": "SQLmap",
+      "icon": "fas fa-database"
+    },
+    {
+      "name": "Nikto",
+      "icon": "fas fa-search"
+    },
+    {
+      "name": "Gobuster",
+      "icon": "fas fa-folder-open"
+    },
+    {
+      "name": "Bash",
+      "icon": "fas fa-terminal"
+    },
+    {
+      "name": "Python",
+      "icon": "fab fa-python"
     }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": "SentinelX CLI",
+      "category": "Red Team Tooling",
+      "badgeClass": "bg-danger",
+      "description": "A command-line interface tool for automated network reconnaissance and vulnerability scanning.",
+      "tags": [
+        "#Python",
+        "#Bash"
+      ],
+      "link": "https://github.com/hackura/SentinelX",
+      "linkText": "Source Code",
+      "icon": "fab fa-github"
+    },
+    {
+      "id": "p2",
+      "title": "RedSentinel",
+      "category": "Reconnaissance",
+      "badgeClass": "bg-primary",
+      "description": "Advanced reconnaissance and threat intelligence gathering tool for red team operations.",
+      "tags": [
+        "#Rust",
+        "#Automation"
+      ],
+      "link": "https://github.com/hackura/RedSentinel",
+      "linkText": "Source Code",
+      "icon": "fab fa-github"
+    },
+    {
+      "id": "p3",
+      "title": "Hackura Store",
+      "category": "Ecommerce",
+      "badgeClass": "bg-success",
+      "description": "A secure ecommerce platform for cybersecurity gear and merchandise.",
+      "tags": [
+        "#WebDev",
+        "#SecureCoding"
+      ],
+      "link": "https://hackura.store",
+      "linkText": "View Store",
+      "icon": "fas fa-shopping-cart"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Founder & Lead",
+      "company": "Hackura Security",
+      "date": "2026 - Present",
+      "description": "Founded a student-led security initiative focusing on ethical hacking workshops, and security awareness."
+    },
+    {
+      "role": "Security Researcher & Student",
+      "company": "Independent Labs",
+      "date": "2025 - Present",
+      "description": "Building custom tools, participating in bug bounties, and maintaining active practice on Hack The Box and TryHackMe."
+    },
+    {
+      "role": "Tool Developer",
+      "company": "Open Source",
+      "date": "2026",
+      "description": "Developed 'SentinelX', a Python-based CLI tool for automated information gathering and basic vulnerability assessment."
+    }
+  ],
+  "education": [
+    {
+      "title": "Trust and Google Cloud Security",
+      "subtitle": "Online Training Platform",
+      "status": "Completed",
+      "statusClass": "bg-success"
+    },
+    {
+      "title": "Network Security & Forensics",
+      "subtitle": "Self-Paced Labs & Research",
+      "status": "Ongoing",
+      "statusClass": "bg-primary"
+    },
+    {
+      "title": "Python for Cybersecurity",
+      "subtitle": "Specialized Course",
+      "status": "Ongoing",
+      "statusClass": "bg-success"
+    }
+  ],
+  "resume": {
+    "name": "Karl Seyram Dorpe",
+    "role": "Cybersecurity | Pentester | Red Team",
+    "location": "Ghana",
+    "email": "karlseyram18@gmail.com",
+    "github": "https://github.com/hackura",
+    "linkedin": "https://linkedin.com/in/karlseyramdorpe",
+    "summary": "Cybersecurity enthusiast and ethical hacker focused on authorized penetration testing, red team operations, and defensive security. Passionate about securing systems by thinking like an attacker. adept at identifying vulnerabilities and implementing robust security measures.",
+    "skillsList": [
+      "Web & Network Pentesting",
+      "Vulnerability Assessment",
+      "Kali Linux & Security Tooling",
+      "Red & Blue Team Operations"
+    ],
+    "eduList": [
+      {
+        "name": "BSc. Cybersecurity",
+        "subtitle": "Ghana Communication Technology University"
+      },
+      {
+        "name": "Advanced Penetration Testing",
+        "subtitle": "Online Training"
+      }
+    ],
+    "expList": [
+      {
+        "role": "Founder & Lead | Hackura Security",
+        "date": "2026 - Present",
+        "desc": "Leading student security initiatives, conducting workshops, and organizing CTF competitions."
+      },
+      {
+        "role": "Security Researcher | Independent",
+        "date": "2025 - Present",
+        "desc": "Developing custom reconnaissance tools and participating in bug bounties, and maintaining active practice on my personal home lab."
+      }
+    ]
+  },
+  "contact": {
+    "email": "karlseyram18@gmail.com",
+    "location": "Ghana",
+    "linkedin": "https://linkedin.com/in/karlseyramdorpe",
+    "github": "https://github.com/hackura",
+    "twitter": "https://x.com/dorpe_karl"
+  }
 }
