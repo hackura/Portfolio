@@ -3,5 +3,4 @@
 /admin/admin/dashboard/*  /admin/admin/login/index.html  401!
 /admin/*                  /admin/admin/login/index.html 200
 
-# Netlify Functions
-/.netlify/functions/*     /.netlify/functions/:splat  200
+
